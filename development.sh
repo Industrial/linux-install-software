@@ -4,6 +4,11 @@ echo "> development"
 
 echo "> development > install packages"
 
+echo "> development > install packages > meld"
+yay -S --noconfirm \
+  meld \
+  1> /dev/null
+
 echo "> development > install packages > chromium"
 yay -S --noconfirm \
   chromium \
