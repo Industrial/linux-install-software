@@ -53,3 +53,9 @@ packages=(
   aws-cli
 )
 conditionally_install_packages $packages
+
+echo "> development > install packages > postgresql"
+packages=(
+  postgresql
+)
+conditionally_install_packages $packages
