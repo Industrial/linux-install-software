@@ -1,19 +1,23 @@
 #!/usr/bin/env bash
 
+. ./lib/packages.sh
+
 echo "> shell"
 
 echo "> shell > install packages"
-yay -S --noconfirm \
-  fish \
-  neovim \
-  vit \
-  ripgrep \
-  fzf \
-  tmux \
-  xsel \
-  1> /dev/null
+packages=(
+  fish
+  neovim
+  vit
+  ripgrep
+  fzf
+  tmux
+  xsel
+)
+conditionally_install_packages $packages
 
 # TODO: change if required
 echo "> shell > change shell to fish"
-chsh -s $(which fish) \
-  1> /dev/null
+if [ $(which fish) != "$SHELL" ]; then
+  chsh -s $(which fish) 1> /dev/null
+fi

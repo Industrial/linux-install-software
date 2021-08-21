@@ -1,18 +1,28 @@
 #!/usr/bin/env bash
 
+. ./lib/packages.sh
+
 echo "> development"
 
 echo "> development > install packages"
 
 echo "> development > install packages > meld"
-yay -S --noconfirm \
-  meld \
-  1> /dev/null
+packages=(
+  meld
+)
+conditionally_install_packages $packages
 
 echo "> development > install packages > chromium"
-yay -S --noconfirm \
-  chromium \
-  1> /dev/null
+packages=(
+  chromium
+)
+conditionally_install_packages $packages
+
+echo "> development > install packages > element-desktop"
+packages=(
+  element-desktop
+)
+conditionally_install_packages $packages
 
 # TODO: fix
 # echo "> development > install packages > code"
@@ -22,21 +32,24 @@ yay -S --noconfirm \
 #   1> /dev/null
 
 echo "> development > install packages > teams"
-yay -S --noconfirm \
-  teams \
-  1> /dev/null
+packages=(
+  teams
+)
+conditionally_install_packages $packages
 
 echo "> development > install packages > java"
-yay -S --noconfirm \
-  jre11-openjdk-headless \
-  jre11-openjdk \
-  jdk11-openjdk \
-  openjdk11-doc \
-  openjdk11-src \
-  maven \
-  1> /dev/null
+packages=(
+  jre11-openjdk-headless
+  jre11-openjdk
+  jdk11-openjdk
+  openjdk11-doc
+  openjdk11-src
+  maven
+)
+conditionally_install_packages $packages
 
 echo "> development > install packages > aws"
-yay -S --noconfirm \
-  aws-cli \
-  1> /dev/null
+packages=(
+  aws-cli
+)
+conditionally_install_packages $packages

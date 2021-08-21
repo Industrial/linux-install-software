@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+. ./lib/packages.sh
+
 # TODO: Find a way to add settings to XFCE such that:
 #       - Super + Ctrl + Shift + H
 #         - movescreen -r left active
@@ -9,9 +11,10 @@
 echo "> repositories > movescreen"
 
 echo "> repositories > movescreen > install packages"
-yay -S --noconfirm \
-  xorg-xwininfo \
-  1> /dev/null
+packages=(
+  xorg-xwininfo
+)
+conditionally_install_packages $packages
 
 TARGET_DIRECTORY="$HOME/Repositories/movescreen"
 
