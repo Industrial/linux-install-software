@@ -9,3 +9,10 @@ cd linux-install-software
 
 ./install.sh
 ```
+
+## TODO
+- Check out [ZX](https://github.com/google/zx)
+  - Pros:
+    - Don't need to use Bash.
+  - Cons:
+    - Needs Node.js.
