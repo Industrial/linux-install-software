@@ -6,4 +6,5 @@ echo "> install"
 ./shell.sh
 ./docker.sh
 ./development.sh
+./media.sh
 ./repositories/index.sh
