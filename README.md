@@ -1,6 +1,8 @@
 # Linux Install Software
 Installs my software (manjaro / archlinux)
 
+⚠ WARNING ⚠: This will **overwrite** your settings.
+
 ## Usage
 ```bash
 git clone https://github.com/Industrial/linux-install-software.git
