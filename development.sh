@@ -24,6 +24,12 @@ packages=(
 )
 conditionally_install_packages $packages
 
+echo "> development > install packages > discord"
+packages=(
+  discord
+)
+conditionally_install_packages $packages
+
 # TODO: fix
 # echo "> development > install packages > code"
 # yay -S --noconfirm \
