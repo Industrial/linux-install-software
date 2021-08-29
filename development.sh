@@ -49,6 +49,12 @@ packages=(
 )
 conditionally_install_packages $packages
 
+echo "> development > install packages > bitwarden"
+packages=(
+  bitwarden
+)
+conditionally_install_packages $packages
+
 echo "> development > install packages > java"
 packages=(
   jre11-openjdk-headless
