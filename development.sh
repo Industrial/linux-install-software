@@ -24,6 +24,12 @@ packages=(
 )
 conditionally_install_packages $packages
 
+echo "> development > install packages > slack"
+packages=(
+  slack
+)
+conditionally_install_packages $packages
+
 echo "> development > install packages > discord"
 packages=(
   discord
