@@ -26,7 +26,7 @@ conditionally_install_packages $packages
 
 echo "> development > install packages > slack"
 packages=(
-  slack
+  slack-electron
 )
 conditionally_install_packages $packages
 
