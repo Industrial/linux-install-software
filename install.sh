@@ -4,6 +4,7 @@ echo "> install"
 
 mkdir -p .tmp
 
+./time.sh
 ./packages.sh
 ./shell.sh
 ./docker.sh
