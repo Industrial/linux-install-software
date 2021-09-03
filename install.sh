@@ -2,6 +2,9 @@
 
 echo "> install"
 
+echo "> install > sudo rights"
+sudo echo "> install > sudo rights > acquired"
+
 mkdir -p .tmp
 
 ./time.sh
