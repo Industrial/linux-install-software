@@ -6,57 +6,19 @@ echo "> development"
 
 echo "> development > install packages"
 
-echo "> development > install packages > meld"
 packages=(
-  meld
-)
-conditionally_install_packages $packages
-
-echo "> development > install packages > chromium"
-packages=(
-  chromium
-)
-conditionally_install_packages $packages
-
-echo "> development > install packages > element-desktop"
-packages=(
-  element-desktop
-)
-conditionally_install_packages $packages
-
-echo "> development > install packages > slack"
-packages=(
-  slack-electron
-)
-conditionally_install_packages $packages
-
-echo "> development > install packages > discord"
-packages=(
-  discord
-)
-conditionally_install_packages $packages
-
-# TODO: fix
-# echo "> development > install packages > code"
-# yay -S --noconfirm \
-#   code \
-#   code-marketplace \
-#   1> /dev/null
-
-echo "> development > install packages > teams"
-packages=(
-  teams
-)
-conditionally_install_packages $packages
-
-echo "> development > install packages > bitwarden"
-packages=(
+  aws-cli
   bitwarden
-)
-conditionally_install_packages $packages
+  chromium
+  discord
+  element-desktop
+  meld
+  postgresql
+  slack-electron
+  teams
+  zeal
 
-echo "> development > install packages > java"
-packages=(
+  # Java
   jre11-openjdk-headless
   jre11-openjdk
   jdk11-openjdk
@@ -66,14 +28,9 @@ packages=(
 )
 conditionally_install_packages $packages
 
-echo "> development > install packages > aws"
-packages=(
-  aws-cli
-)
-conditionally_install_packages $packages
-
-echo "> development > install packages > postgresql"
-packages=(
-  postgresql
-)
-conditionally_install_packages $packages
+# TODO: fix
+# echo "> development > install packages > code"
+# yay -S --noconfirm \
+#   code \
+#   code-marketplace \
+#   1> /dev/null
