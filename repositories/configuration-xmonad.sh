@@ -13,7 +13,6 @@ if [ ! -d "${source_dir}" ]; then
   git clone "git@github.com:Industrial/configuration-xmonad.git" "${source_dir}"
 fi
 
-rm -f "${target_dir}"
-mkdir "${target_dir}"
+rm -rf "${target_dir}"
 
-ln -s "${source_dir}" "${target_dir}"
+ln -s $source_dir $target_dir
