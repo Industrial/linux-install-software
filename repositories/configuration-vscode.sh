@@ -4,7 +4,7 @@
 
 echo "> repositories > configuration-vscode"
 
-source_dir="${HOME}/Repositories/configuration-vscode"
+source_dir="${HOME}/Code/configuration/configuration-vscode"
 target_dir="${HOME}/.config/Code"
 
 if [ ! -d "${source_dir}" ]; then
