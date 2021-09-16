@@ -8,5 +8,6 @@ echo "> media > install packages"
 
 packages=(
   transmission-gtk
+  bookworm
 )
 conditionally_install_packages $packages
