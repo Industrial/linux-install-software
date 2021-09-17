@@ -8,6 +8,7 @@ echo "> development > install packages"
 
 packages=(
   aws-cli
+  aws-sam-cli
   bitwarden
   chromium
   discord
