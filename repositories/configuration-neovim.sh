@@ -18,4 +18,12 @@ rm -rf "${target_dir}"
 ln -s "${source_dir}" "${target_dir}"
 
 cd "${source_dir}"
-bin/install
+# bin/install
+
+mkdir -p ~/.bin
+
+rm ~/.bin/neovim-promptline
+ln -s "${source_dir}/bin/neovim-promptline" ~/.bin/neovim-promptline
+
+rm ~/.bin/neovim-tmuxline
+ln -s "${source_dir}/bin/neovim-tmuxline" ~/.bin/neovim-tmuxline
