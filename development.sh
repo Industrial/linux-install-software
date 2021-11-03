@@ -11,11 +11,17 @@ packages=(
   aws-sam-cli
   bitwarden
   chromium
+  code
+  deno
   discord
   element-desktop
+  gcc
+  gitkraken
+  make
   meld
   postgresql
   slack-electron
+  st-manjaro
   teams
   zeal
 
