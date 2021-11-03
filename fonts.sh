@@ -25,12 +25,12 @@ for font in ${fonts[@]}; do
     curl -L "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/${file_name}" > "./${temp_file_name}" 1> /dev/null && mv "${temp_file_name}" "${file_name}"
   fi
 
+  echo "> fonts > install > ${font} > installing"
   if [ -d "${target_dir}" ]; then
-    echo "> fonts > install > ${font} > installing"
-
     sudo rm -rf "${target_dir}"
-    sudo unzip "${file_name}" -d "${target_dir}" 1> /dev/null
   fi
+  sudo mkdir -p "${target_dir}"
+  sudo unzip "${file_name}" -d "${target_dir}" 1> /dev/null
 done
 
 echo "> fonts > cache"
