@@ -32,6 +32,11 @@ packages=(
   openjdk11-doc
   openjdk11-src
   maven
+
+  # Python
+  python3
+  python-pip
+  python-virtualenv
 )
 conditionally_install_packages $packages
 

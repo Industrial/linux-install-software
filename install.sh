@@ -10,8 +10,12 @@ mkdir -p .tmp
 ./time.sh
 ./packages.sh
 ./shell.sh
-./docker.sh
 ./development.sh
-./media.sh
 ./fonts.sh
 ./repositories/index.sh
+
+# These are optional and depend on the type of system.
+#./desktop.sh
+#./docker.sh
+#./media.sh
+#./security.sh
