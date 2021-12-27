@@ -18,7 +18,6 @@ packages=(
 )
 conditionally_uninstall_packages $packages
 
-# TODO: when required
 echo "> packages > install required"
 packages=(
   base-devel
@@ -36,3 +35,5 @@ packages=(
 conditionally_install_packages $packages
 
 sudo setcap "cap_net_admin,cap_net_raw=ep" $(which nethogs)
+
+echo "> packages > actionsflow"
