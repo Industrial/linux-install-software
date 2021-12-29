@@ -37,3 +37,7 @@ conditionally_install_packages $packages
 sudo setcap "cap_net_admin,cap_net_raw=ep" $(which nethogs)
 
 echo "> packages > actionsflow"
+packages=(
+  act
+)
+conditionally_install_packages $packages
