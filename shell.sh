@@ -19,5 +19,5 @@ conditionally_install_packages $packages
 # TODO: change if required
 echo "> shell > change shell to fish"
 if [ $(which fish) != "$SHELL" ]; then
-  chsh -s $(which fish) 1> /dev/null
+  sudo usermod -s $(which fish) $USER
 fi
