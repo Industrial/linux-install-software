@@ -10,8 +10,7 @@ packages=(
   bluez-utils
   bookworm
   pulsemixer
-  spotify-tui
-  spotifyd
+  spotify
   transmission-gtk
 )
 conditionally_install_packages $packages
