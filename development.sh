@@ -11,7 +11,6 @@ packages=(
   aws-sam-cli
   bitwarden
   chromium
-  code
   deno
   discord
   element-desktop
@@ -23,6 +22,7 @@ packages=(
   slack-electron
   st-manjaro
   teams
+  visual-studio-code-bin
   zeal
 
   # Java
